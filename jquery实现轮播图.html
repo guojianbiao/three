@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery实现轮播图</title>
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	<!-- 标题 -->
+	<div class="word">jQuery实现轮播图</div>
+	<!-- 主体 -->
+	<div id="main">
+	<!-- 图片轮播 -->
+		<div class="pics">
+			<img src="img/1.jpg" class="bloc pics-active">
+			<img src="img/2.jpg" class="bloc">
+			<img src="img/3.jpg" class="bloc">
+			<img src="img/4.jpg" class="bloc">
+			<img src="img/5.jpg" class="bloc">
+		</div>
+	<!-- 箭头 -->
+		<div class="button prev" id="prev"></div>
+		<div class="button next" id="next"></div>
+	<!-- 圆点 -->
+		<div class="dots" id="dots">
+			<span class="dot dots-active"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+	</div>
+	<script src="vendor/jquery-1.12.4.js"></script>
+	<script src="jquery/jquery.js"></script>
+</body>
+</html>

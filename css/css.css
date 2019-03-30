@@ -1,0 +1,86 @@
+*{
+	margin:0;
+	padding:0;
+}
+.word{
+	font-size: 26px;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+	margin: 30px;
+}
+/*主体盒子样式*/
+#main{
+	width: 1200px;
+	height: 460px;
+	border: 10px solid #bbb;
+	margin: 50px auto;
+	position: relative;
+}
+
+/*图片样式*/
+.pics{
+	width: 1200px;
+	height: 460px;
+	overflow: hidden;
+}
+.bloc{
+	display: none;
+	float: left;
+	cursor: pointer;
+}
+.pics-active{
+	display: block;
+}
+
+/*箭头样式*/
+.button{
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	left:0;
+	margin-top: -40px;
+	cursor: pointer;
+}
+
+/*右箭头样式*/
+.prev{
+	left:auto;
+	right:0;
+	background: url(../img/pre.png) center center no-repeat;
+}
+/*左箭头样式*/
+.next{
+	background: url(../img/pre2.png) center center no-repeat;
+}
+
+/*滑过箭头时的样式*/
+.button:hover{
+	background-color: #333;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+/*圆点样式*/
+.dots{
+	position: absolute;
+	bottom: 20px;
+	right: 0px;
+	padding-right: 14px;
+	text-align: center;
+	line-height: 15px;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-left: 8px;
+	background-color: rgba(7,17,27,0.4);
+	cursor: pointer;
+	box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
+}
+.dots-active{
+	box-shadow: 0 0 0 2px rgba(7,17,27,0.4) inset;
+	background-color: #fff;
+}
